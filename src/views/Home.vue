@@ -4,12 +4,11 @@
       <v-alert outlined color="orange">
         <div class="text-h6">Welcome</div>
         <div>
-          Berawal dari suka jajan bareng teman-teman, dan belinya pake
-          diskon,pas mau ngitung utang pada ga mau.
+          Aplikasi untuk mmebagi hasil rata harga makanan yang sudah terdiskon, yang di beli menggunakan grabfood dan shopeefood.
         </div>
       </v-alert>
       <v-btn class="text-capitalize" block depressed color="orange" dark to="/shopee"
-        >Mulai Hitung hutang temanmu</v-btn
+        >Mulai</v-btn
       >
     </div>
   </div>

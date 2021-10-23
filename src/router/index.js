@@ -20,6 +20,11 @@ const routes = [
     name: "grab",
     component: () => import("../components/grab.vue"),
   },
+  {
+    path: "/scan",
+    name: "scan",
+    component: () => import("../views/apiWa/scanQr.vue"),
+  },
 ];
 
 const router = new VueRouter({

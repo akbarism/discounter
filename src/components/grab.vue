@@ -113,6 +113,10 @@
         </v-card>
         <v-card class="pa-3">
           <h3>Biaya Tambahan</h3>
+          <small
+            >Untuk grab, diskon sudah di kurangi pajak, jadi pajak tidak perlu
+            di masukan!</small
+          >
           <div class="mt-5">
             <div class="mb-5" v-for="item in extraCost" :key="item.name">
               <h3 class="normal_line_height">{{ item.name }}</h3>
@@ -277,6 +281,7 @@ export default {
         ListFinalPrice.push(cutOff);
       });
       this.grandTotal = ListFinalPrice.reduce((a, b) => a + b, 0);
+      this.grandTotal = Math.round(this.grandTotal);
       this.dialog = true;
       // this.$refs.hasil.capture();
     },
